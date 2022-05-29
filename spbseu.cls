@@ -3,27 +3,26 @@
 
 \LoadClass[hyperref={unicode=true}]{beamer}
 
-% Cyrillic
+
+% Кириллица
 \usepackage[utf8]{inputenc}
 \usepackage[english, main=russian]{babel}
 
-% Justifying text
-\usepackage{lipsum}
 
-% Presentation style
+% Стиль презентации
 \usetheme{Madrid}
 \useoutertheme{shadow}
 \usefonttheme{professionalfonts}
 
-% Presentation colors
+% Цвета презентации
 \definecolor{spbseu}{rgb}{0,0.51176,0.54901}
 \usecolortheme[named=spbseu]{structure}
 
-% Disable headline and footline
+% Отключение верхней и нижней линий
 \setbeamertemplate{headline}{}
 \setbeamertemplate{footline}{}
 
-% Navigation symbols
+% Навигация
 \addtobeamertemplate{navigation symbols}{}{%
     \usebeamerfont{footline}%
     \usebeamercolor[fg]{footline}%
@@ -31,10 +30,10 @@
     \insertframenumber/\inserttotalframenumber
 }
 
-% Page numbers
+% Номер слайда
 \beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
 
-% Justifying
+% Выравнивание 
 \newcommand{\justifying}[1]{\parbox{\linewidth}{#1}}
 \newenvironment{nscenter}
      {\parskip=0pt\par\nopagebreak\centering}

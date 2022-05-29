@@ -1,6 +1,6 @@
 all:
-	rubber --pdf ${pres}.tex
+	rubber --pdf main.tex
 
 clean:
-	rubber --clean ${pres}.tex
-	rm -f ${pres}.pdf
+	rubber --clean main.tex
+	rm -f main.pdf
