@@ -1,13 +1,36 @@
-### Presentation
+<h2><img src="logo.png" width=70>Шаблон для оформления презентаций СПбГЭУ</h2>
 
-LaTeX presentation template for university.
+<h3>Иерархия репозитория</h3>
 
-Build PDF:
-```
-make pres=<name>
+```bash
+.
+├── LICENSE
+├── logo.png
+├── main.tex    # пример презентации
+├── Makefile
+├── README.md
+└── spbseu.cls  # шаблон презентации
 ```
 
-Clean:
+<h3>Установка</h3>
+
+Для того чтобы подключить шаблон, нужно переместить `spbseu.cls` в папку с рабочим `.tex`-файлом и в самом начале указать следующие параметры документа:
+
+```tex
+\documentclass{spbseu}
+...
 ```
-make clean pres=<name>
+
+<h3>Make</h3>
+
+<h4>Компиляция</h4>
+
+```bash
+make
+```
+
+<h4>Очистка</h4>
+
+```bash
+make clean
 ```
